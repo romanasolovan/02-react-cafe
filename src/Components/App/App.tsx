@@ -1,5 +1,5 @@
 import { useState } from "react";
-import css from "./App.module.css"
+import css from "./App.module.css";
 import CafeInfo from "../CafeInfo/CafeInfo";
 import Notification from "../Notification/Notification";
 import VoteOptions from "../VoteOptions/VoteOptions";
@@ -29,7 +29,7 @@ const App = () => {
         })
     };
   
-    const totalVotes = votes.good + votes.neutral + votes.bad;
+    const totalVotes = votes.good + votes.bad + votes.neutral;
   
     const positiveRate = totalVotes ? Math.round((votes.good / totalVotes) * 100) : 0;
   
